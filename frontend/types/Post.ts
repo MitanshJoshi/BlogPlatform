@@ -6,5 +6,8 @@ export interface Post {
     _id: string;
     email: string;
   };
+  author?: {
+    email: string;
+  };
   createdAt: string;
 }
