@@ -40,6 +40,7 @@ const LoginPage = () => {
 
   return (
     <Layout title="Login">
+      <div className='max-w-lg mx-auto p-4'>
       <h1 className="text-4xl font-bold mb-4">Login</h1>
       <form onSubmit={handleLogin} className="space-y-4">
         <div>
@@ -67,6 +68,7 @@ const LoginPage = () => {
         {error && <p className="text-red-600">{error}</p>}
         <button type="submit" className="w-full bg-teal-600 text-white p-2 rounded-md">Login</button>
       </form>
+      </div>
     </Layout>
   );
 };

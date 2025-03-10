@@ -30,6 +30,7 @@ const Signup = () => {
 
   return (
     <Layout title="Sign Up">
+      <div className='max-w-lg mx-auto p-4'>
       <h1 className="text-4xl font-bold mb-4">Sign Up</h1>
       <form onSubmit={handleSignup} className="space-y-4">
         <div>
@@ -57,6 +58,7 @@ const Signup = () => {
         {error && <p className="text-red-600">{error}</p>}
         <button type="submit" className="w-full bg-teal-600 text-white p-2 rounded-md">Sign Up</button>
       </form>
+      </div>
     </Layout>
   );
 };

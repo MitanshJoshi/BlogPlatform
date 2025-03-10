@@ -18,7 +18,7 @@ const PostPage = ({ post }: PostPageProps) => {
   return (
     <Layout title={post.title}>
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+        <h1 className="text-4xl font-bold mb-4 break-words">{post.title}</h1>
         <p className="text-gray-700 mb-4">{post.content}</p>
         <small className="block text-gray-500">
           Posted by {post.authorId?.email || post.author?.email} on {format(new Date(post.createdAt), 'dd/MM/yyyy')}
