@@ -41,11 +41,10 @@ The project is divided into two main parts: the backend and the frontend.
   - `Layout.tsx`: Layout component for consistent page structure.
   - `PostList.tsx`: Component for displaying a list of blog posts.
   - `PostForm.tsx`: Form component for creating new blog posts.
-  - `Navbar.tsx`: Navigation bar component.
-  - `Footer.tsx`: Footer component.
+
 - **styles/**: Contains CSS files for styling.
   - `globals.css`: Global CSS styles.
-  - `Home.module.css`: CSS module styles for the homepage.
+
 - `tsconfig.json`: TypeScript configuration file.
 - `next.config.js`: Configuration settings for Next.js.
 - `package.json`: Lists the dependencies and scripts for the frontend.
