@@ -1,6 +1,7 @@
 import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
+import { format } from 'date-fns';
 import { Post } from '../../types/Post';
 
 interface PostPageProps {
@@ -20,7 +21,7 @@ const PostPage = ({ post }: PostPageProps) => {
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         <p className="text-gray-700 mb-4">{post.content}</p>
         <small className="block text-gray-500">
-          Posted by {post.authorId?.email || post.author?.email} on {new Date(post.createdAt).toLocaleDateString()}
+          Posted by {post.authorId?.email || post.author?.email} on {format(new Date(post.createdAt), 'dd/MM/yyyy')}
         </small>
       </div>
     </Layout>

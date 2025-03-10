@@ -34,7 +34,7 @@ const PostList: React.FC<PostListProps> = ({ posts, onEditPost }) => {
           </div>
           <div className="mt-4">
             <small className="block text-gray-500">
-              Posted by {post.authorId?.email || post.author?.email} on {format(new Date(post.createdAt), 'MM/dd/yyyy')}
+              Posted by {post.authorId?.email || post.author?.email} on {format(new Date(post.createdAt), 'dd/MM/yyyy')}
             </small>
             {onEditPost && (
               <div className="mt-4 flex space-x-4">
