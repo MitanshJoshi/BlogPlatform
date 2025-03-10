@@ -28,7 +28,7 @@ const PostPage = ({ post }: PostPageProps) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { postId } = context.params;
+  const { postId } = context.params as { postId: string };
   console.log(postId);
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts/posts/get/${postId}`);
   const post = await res.json();
